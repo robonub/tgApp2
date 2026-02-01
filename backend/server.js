@@ -7,7 +7,7 @@ const cookieParser = require("cookie-parser");
 const path = require("path");
 
 const app = express();
-const SECRET_KEY = "test";
+const SECRET_KEY = process.env.SECRET_KEY;
 const cors = require("cors");
 
 app.use(cors({
