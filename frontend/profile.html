@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <nav class="nav-tabs">
+        <div class="topbar-title">TestApp</div>
+        <a href="home.html" class="tab">Главная</a>
+        <a href="profile.html" class="tab active">Профиль</a>
+        <a href="myProducts.html" class="tab">Мои товары</a>
+    </nav>
+</header>
+
+<div class="layout">
+    <aside class="sidebar">
+        <p id="userInfo">Загрузка...</p>
+
+        <button id="logout" class="btn btn-logout">Выйти</button>
+    </aside>
+
+    <main class="content">
+        <h1>Профиль</h1>
+
+        <div class="profile-card">
+            <p><b>Email:</b> <span id="email"></span></p>
+            <p><b>Имя:</b> <span id="name"></span></p>
+            <p><b>Дата регистрации:</b> <span id="createdAt"></span></p>
+        </div>
+    </main>
+</div>
+
+<script src="js/profile.js"></script>
+</body>
+</html>

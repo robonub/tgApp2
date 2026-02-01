@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить товар</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <nav class="nav-tabs">
+        <a href="home.html" class="tab">Главная</a>
+        <a href="profile.html" class="tab">Профиль</a>
+        <a href="myProducts.html" class="tab active">Мои товары</a>
+    </nav>
+</header>
+
+<div class="layout">
+    <aside class="sidebar">
+        <p id="userInfo">Загрузка...</p>
+    </aside>
+
+    <main class="content">
+        <h1>Добавить товар</h1>
+
+        <form id="productForm" enctype="multipart/form-data">
+            <div>
+                <label for="title">Название:</label>
+                <input type="text" id="title" name="title" placeholder="Введите название товара" required>
+            </div>
+
+            <div>
+                <label for="description">Описание:</label>
+                <textarea id="description" name="description" placeholder="Введите описание товара" required></textarea>
+            </div>
+
+            <div>
+                <label for="price">Цена:</label>
+                <input type="number" id="price" name="price" placeholder="Введите цену" required>
+            </div>
+
+            <div>
+                <label for="images">Изображения:</label>
+                <input type="file" id="images" name="images" multiple accept="image/*" required>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit">Добавить</button>
+                <button type="button" id="cancelBtn">Отмена</button>
+            </div>
+        </form>
+
+        <p id="message"></p>
+    </main>
+</div>
+
+<script src="js/addProduct.js"></script>
+<script>
+    // Кнопка "Отмена" возвращает на myProducts.html
+    document.getElementById("cancelBtn").addEventListener("click", () => {
+        window.location.href = "myProducts.html";
+    });
+</script>
+
+</body>
+</html>

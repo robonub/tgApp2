@@ -1,0 +1,92 @@
+/* ===== Reset ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(180deg, #f8fafc, #eef2ff);
+    color: #111827;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ===== Контейнер ===== */
+.payment-container {
+    background: rgba(255,255,255,0.95);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    animation: fadeIn 0.4s ease;
+}
+
+/* ===== Заголовок ===== */
+.payment-container h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* ===== Информация о платеже ===== */
+#info {
+    font-size: 18px;
+    color: #374151;
+    margin-bottom: 30px;
+}
+
+/* ===== Кнопка оплаты ===== */
+#payBtn {
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, #16a34a, #22c55e);
+    color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#payBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(34,197,94,0.5);
+}
+
+/* ===== Анимация появления ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Адаптив ===== */
+@media (max-width: 480px) {
+    .payment-container {
+        padding: 30px 20px;
+    }
+
+    .payment-container h2 {
+        font-size: 24px;
+    }
+
+    #info {
+        font-size: 16px;
+    }
+
+    #payBtn {
+        padding: 12px 24px;
+        font-size: 15px;
+    }
+}

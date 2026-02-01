@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Выбор отделения Почты России</title>
+
+  <!-- Leaflet -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+  </script>
+
+</head>
+<body>
+
+<h2>Выберите отделение Почты России</h2>
+<button onclick="getLocation()">Определить моё местоположение</button>
+
+<div id="selectedOffice">Отделение не выбрано</div>
+<div id="map" style="height:500px;"></div>
+
+<!-- Подключаем JS -->
+<script src="js/postOffice.js"></script>
+
+</body>
+</html>

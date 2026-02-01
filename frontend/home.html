@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== Верхняя панель ===== -->
+<header class="topbar">
+    <nav class="nav-tabs">
+        <div class="topbar-title">TestApp</div>
+        <a href="home.html" class="tab active">Главная</a>
+        <a href="profile.html" class="tab">Профиль</a>
+        <a href="myProducts.html" class="tab">Мои товары</a>
+    </nav>
+</header>
+
+<!-- ===== Основная разметка ===== -->
+<div class="layout">
+
+    <!-- Левая панель -->
+    <aside class="sidebar">
+        <p id="userInfo">Загрузка...</p>
+        <button id="logout" class="btn btn-logout">Выйти</button>
+        <!-- Нижние ссылки -->
+        <div class="sidebar-footer">
+            <a href="privacy.html">Политика конфиденциальности</a>
+            <a href="terms.html">Пользовательское соглашение</a>
+            <a href="rules.html">Правила сервиса</a>
+            <a href="support.html">Поддержка</a>
+        </div>
+    </aside>
+
+    <!-- Основной контент -->
+    <main class="content">
+        <h1 class="page-title">Главная страница</h1>
+
+        <!-- Поле поиска -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Поиск товаров..." class="search-input">
+            <button id="searchBtn" class="btn search-btn">🔍</button>
+        </div>
+
+        <!-- Сетка товаров -->
+        <div id="productsContainer" class="products-grid"></div>
+    </main>
+</div>
+
+<script src="js/home.js"></script>
+</body>
+</html>
