@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken");
 const rateLimit = require("express-rate-limit");
 const cookieParser = require("cookie-parser");
 const path = require("path");
-require("dotenv").config
+require("dotenv").config()
 
 const app = express();
 const SECRET_KEY = process.env.SECRET_KEY;
