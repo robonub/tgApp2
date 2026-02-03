@@ -12,7 +12,7 @@ const SECRET_KEY = process.env.SECRET_KEY;
 const cors = require("cors");
 
 app.use(cors({
-    origin: ["http://localhost:3000", "http://127.0.0.1:3000","https://tg-miniapp-kwsg.onrender.com"],
+    origin: ["http://localhost:3000", "http://127.0.0.1:3000","https://tgapp2-u2t8.onrender.com/"],
     credentials: true
 }));
 
